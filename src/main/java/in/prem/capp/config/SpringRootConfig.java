@@ -5,7 +5,10 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
+// Represents the class has @Beans
 @Configuration
+
+// Spring will scan all the components from the mentioned folder
 @ComponentScan(basePackages = {"in.prem.capp.dao","in.prem.capp.service"})
 public class SpringRootConfig {    
     //TODO: Services, DAO, DataSource, Email Sender or some other business layer beans  
